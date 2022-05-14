@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is the title -->
+
+    <title>Forms and Input Tags</title>
+</head>
+<body>
+    <header><h3>Forms and Input Tags</h3></header>
+    <!-- Our code starts from here -->
+
+    <!-- Whenever we add add a form tag in the HTML, it is going to ask for some action for submitting that particular form in the backend for future reference. -->
+
+    <!-- We will try backend.php all the data we submitting in form stores automatically in the backend "backend.php" after submitting it. -->
+
+    <!-- input tags used for interactive controls for web-based forms to accept data from the user. -->
+
+    <!-- The <span> is an in-line element and the div is a block element. If we use two separate div tags for diff. inputs wil come on diff. lines. -->
+
+        <!-- To get input as text, the syntax is- -->
+        <div>
+            Name* :- <input type="text" placeholder="Full Name">
+        </div>
+        <br>
+
+
+        <!-- To get input type as Email, the syntax is- -->
+            <div>
+                Email* :- <input type="email" placeholder="Email" name="Myemail" required>
+            </div>
+
+            <!-- name="Myemail" is used so that the backend can recognize the tag that we are using;  -->
+
+            
+        <!-- We can also add date and time in the form, use this syntax -->
+        <br>
+            <div>
+               Date :- <input type="date" name="myDate" id="">
+            </div> <br>
+        
+        <!-- We can also add Numbers in the form -->
+        
+        Number :- <input type="number" placeholder="Mobile Number" >  <br>  
+            
+
+        <!-- For Checkbox -->
+        <br>
+        <div>
+            Are You Eligible?: <input type="checkbox" name="MyEligibility" checked required>
+        </div>
+
+        <!-- For Radio -->
+        <br>
+        <div>
+           Gender :- <br> Male<input type="radio" name="Gender" required>
+            Female <input type="radio" name="Gender">
+           Others <input type="radio" name="Gender">
+        </div><br>
+
+
+        <div>
+            Write About Yourself. :- <textarea name="myText" id="" cols="70" rows="10"></textarea>
+        </div>
+
+
+        <div>
+            <label for="car">Car:-</label>
+            <select name="myCar" id="">
+                <option value="Indica">Indica</option>
+                <option value="Swift">Swift</option>
+            </select>
+        </div>
+
+
+        <!-- To get Submit Button in the form, the syntax is- -->
+        <br>
+        <input type="submit" value="Submit Now">
+
+
+        <!-- To get Reset Button in the form, the syntax is- -->
+       
+            <input type="reset" value="Reset Now">
+
+
+        <hr>
+        <a href="/Tutorial9.html">Tutorial9</a>
+</body>
+</html>
