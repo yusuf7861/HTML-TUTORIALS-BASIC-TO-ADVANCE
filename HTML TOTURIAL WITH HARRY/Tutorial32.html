@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth-child Pseudo-selectors</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Ubuntu&display=swap");
+
+        * {
+            font-family: Ubuntu, sans-serif;
+        }
+
+        input {
+            display: block;
+        }
+
+        .container {
+            display: block;
+            width: 233px;
+            margin: auto;
+
+        }
+
+        input[type="text"] { 
+            /* never use space between the input and the type="text" due to this we can't see any change. */
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        a[target] {  
+            /* only works when anchor tag have target="" in it. */
+            font-size: 44px;
+            color: violet;
+        }
+
+        a[target='_self'] {
+            font-size: 30px;
+            color: Purple;
+        }
+
+        input[type="email"] {
+            color: aqua;
+            border: 3px solid black;
+        }
+
+        /* nth-child pseudo-selectors */
+
+        /* li:nth-child(2n+0) {
+            color: blue;
+        } */
+
+        /* li:nth-child(3n+2) {
+            color: blue;
+        } */
+
+        /* odd child */
+
+        /* li:nth-child(odd) {
+            color: blueviolet;
+        } */
+
+        /* even child */
+
+        li:nth-child(even) {
+            color: blueviolet;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1><a href="http://google.com" target="_blank">Go to Google.com</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to Facebook.com</a></h1>
+
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name..">
+            <input type="email" placeholder="Enter your email..">
+            <input type="password" placeholder="Enter your password..">
+            <input type="submit" value="Submit">
+        </form>
+
+        <li class="item" id="item1">Item1</li>
+        <li class="item" id="item2">Item2</li>
+        <li class="item" id="item3">Item3</li>
+        <li class="item" id="item4">Item4</li>
+        <li class="item" id="item5">Item5</li>
+        <li class="item" id="item6">Item6</li>
+        <li class="item" id="item7">Item7</li>
+        <li class="item" id="item8">Item8</li>
+        <li class="item" id="item9">Item9</li>
+        <li class="item" id="item10">Item10</li>
+
+    </div>
+
+    <hr>
+    <a href="Tutorial33.html" target="_blank">before and after Pseudo-Selectors</a>
+</body>
+</html>

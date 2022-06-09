@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links and Buttons</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Ubuntu&display=swap');
+
+        body {
+            font-family: "Ubuntu", sans-serif;
+        }
+        .container {
+            border: 1px solid red;
+            background-color: #ffafbd;
+            padding: 30px;
+            margin: 20px auto;
+        }
+        a {
+            background-color: #000000;
+            padding: 0 5px 0 5px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+        a:hover {
+            color: red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: violet;
+        }
+        a:active {
+            background-color: darkblue;
+        }
+        .btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            background-color: crimson;
+            padding: 0.5em 0.5em 0.5em;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            color: #fff;
+        }
+       </style>
+</head>
+<body>
+    <h3>Styling Links and Buttons</h3>
+    <Details>A pseudo class is used to define a special state of an Element. <br> Types of Pseudo Selectors -:) <br>
+    1. Hover<br>
+    2. Visited<br>
+    3. Active<br>
+    </Details>
+
+
+    <div id="cont1" class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatem, fugiat labore sapiente atque natus sunt maxime itaque delectus dolorum obcaecati nisi vero deleniti, totam libero nesciunt asperiores temporibus quasi. Rerum, architecto!</p>
+        <a href="https://google.com" blank="_" class="btn">Google</a>
+        <button class="btn">Contact Us</button>
+    </div>
+    <hr>
+    <a href="Tutorial23.html" blank="_blank">Creating Navigation Bar</a>
+</body>
+</html>

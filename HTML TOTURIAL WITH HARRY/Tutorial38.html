@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background: brown;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: all 0.5s ease-in-out;
+            /* transform: rotate(45deg); */
+        }
+        
+        .box:hover {
+            /* transform: rotate(360deg); */
+            /* transform: skew(40deg); */
+            /* transform: scale(2); */
+            transform: translateX(120px);
+            /* transform: translateY(120px); */
+            /* transform: translate(120px, 120px); */
+        }
+
+        .container {
+            height: 80vh;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;  /* align items on main-axis */
+            align-items: center;      /* align items on cross-axis */
+        }
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+
+
+    <hr>
+    <a href="Tutorial39.html" target="_blank">Best Online Food Delivery in India| MyOnlineMeal.com</a>
+</body>
+</html>

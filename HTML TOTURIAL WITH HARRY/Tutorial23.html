@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Navigation Bar</title>
+    <style>
+              @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Ubuntu&display=swap');
+
+    body {
+        font-family: "Ubuntu", sans-serif;
+    }
+
+    .navbar {
+        background-color: #000000;
+        border-radius: 30px;
+        height: 43px;
+        
+    }
+
+    .navbar li {
+        float: left;
+        list-style: none;
+        margin: 10px 30px;
+        /* After defining it float its not in parent area so below are rest code for this. */
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 3px 3px;
+    }
+
+    .navbar input {
+        float: right;
+        margin: 10px 31px;
+        border: 2px solid black;
+        border-radius: 8px;
+        height: 20px;
+        padding: 0 15px;
+    }
+
+    .navbar li a:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
+    .navbar li a:visited {
+        color: color;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <div class="search">
+          <input
+            type="text"
+            placeholder="Search here.."
+            name="search"
+            id="search"
+          />
+        </div>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <a href="Tutorial24.html" target="_blank">CSS Display Property</a>
+  </body>
+</html>

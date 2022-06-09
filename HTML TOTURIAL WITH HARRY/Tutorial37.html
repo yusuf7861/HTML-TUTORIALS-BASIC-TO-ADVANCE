@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        body {
+            background-color: #fff;
+        }
+        #box {
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+
+            /* Transition-property- It is used to decide which transition property we want to use. For example, if we want to transition background color, then we have to write- */
+            /* transition-property: background-color; */
+
+            /* Transition-duration- If we want to see the duration which is required to make the change */
+            /* transition-duration: 2s; */
+
+            /* Transition-timing-function- This property is used to decide the speed of transition from beginning to end. 
+            These are of three types: */
+            /* transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in;
+            transition-timing-function: ease-out; */
+
+            /* Transition-delay- It is that particular time interval after which the transition effect will start. */
+            /* transition-delay: 2s; */
+
+            /* Shorthand property that allow us to write these transitions in a single line of code.  */
+
+            /* transition: background-color 1s ease-in-out 2s; */
+            
+
+            transition: all 1s ease-in-out .3s;
+
+        }
+
+        #box:hover {
+            background-color: green;
+            height: 400px;
+            width: 400px;
+            border-radius: 50px;
+            font-size: 45px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        This is a CSS transition Tutorial
+    </h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+
+
+    <hr>
+    <a href="Tutorial38.html" target="_blank">CSS Transform</a>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and Clear (Alignments)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Ubuntu&display=swap');
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+        details:hover {
+            cursor: pointer;
+            color: blue;
+        }
+
+        .container {
+            width: 900px;
+            height: 900px;
+            border: 3px solid purple;
+            background-color: #ffafbd;
+            margin: 30px auto;
+        }
+        .container h1 {
+            padding: 0 15px;
+            text-align: center;
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 8px;
+            padding: 12px 8px;
+            background: rgb(250, 238, 205);
+        }
+
+        #fruit {
+            width: 48%;
+            float: left;
+        }
+
+        #stationary {
+            width: 48%;
+            float: right;
+        }
+
+        #computer {
+            width: 48%;
+            float: left;
+        }
+
+        #glasses { 
+            width: 48%;
+            float: left;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>Float and clear -:)</h3>
+     <details> The CSS float property specifies how an element should float.<br> The CSS Clear property specifies what element can float beside the cleared element and on which side.<br> The <i>Float</i> property is used for formatting and positioning content.</details>
+
+    <div class="container">
+        <h1>Welcome to My Store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel natus esse quisquam fugiat itaque vitae alias, iusto, at neque necessitatibus tenetur ullam architecto temporibus tempore placeat nihil iste, enim quae. Ratione quia odio nobis.
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel natus esse quisquam fugiat itaque vitae alias, iusto, at neque necessitatibus tenetur ullam architecto temporibus tempore placeat nihil iste, enim quae. Ratione quia odio nobis.
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel natus esse quisquam fugiat itaque vitae alias, iusto, at neque necessitatibus tenetur ullam architecto temporibus tempore placeat nihil iste, enim quae. Ratione quia odio nobis.
+            </p>
+        </div>
+        <div></div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum commodi quo dolor, possimus accusamus facilis.
+            </p>
+        </div>
+    </div>
+    <hr>
+    <a href="Tutorial22.html" target="_blank">Styling Links & Buttons</a>
+</body>
+</html>

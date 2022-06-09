@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rows & Gaps in Grid</title>
+    <style>
+        .box {
+            background-color: red;
+            border: 2px solid black;
+        }
+
+        /* .grid {
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr;
+            grid-template-columns: 1fr 4fr 2fr;
+            grid-gap: 1rem;
+        } */
+        .grid {
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr;
+            /* grid-template-columns:repeat(4, 2fr); */
+            grid-template-columns:repeat(8, 6fr);
+            grid-gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+    <hr>
+    <a href="Tutorial42.html" target="_blank">Spanning Multiple Rows and Columns in Grid</a>
+</body>
+</html>

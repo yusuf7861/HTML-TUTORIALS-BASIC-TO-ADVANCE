@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animation & keyframes</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Ubuntu&display=swap");
+
+        * {
+            font-family: Ubuntu, sans-serif;
+        }
+
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box { 
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+            position: relative;
+             /* The position of the box is set to be relative so that we can move it within our webpage */
+
+            /* For making our animation, we need to start by giving the animation-name. */
+
+            /* important functions are mandatory to write. */
+            animation-name: yusuf2 !important; 
+            animation-duration: 5s !important; 
+            animation-iteration-count: 1 !important;
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate;
+            animation-direction: reverse; */
+        }
+
+        /* Define the animation we made  */
+
+        /* keyframes are used to make the animation. From and to are used to decide how the animation will  move in the webpage. This type of animation used to design scroll bars or progress bars on the webpage. */
+        @keyframes yusuf1 {             /* !important */ 
+             from {
+                 width: 200px;
+             }
+             
+             to {
+                 width: 1400px;
+             }
+        }
+
+         /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: harry 5s ease-in 1s 12 backwards; */
+
+        @keyframes yusuf2 {
+            0% {
+                top: 0;
+                left: 0;
+            }
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+            100% {
+                top: 250px;
+                left: 250px;
+            }
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+
+    <hr>
+    <a href="Tutorial37.html" target="_blank">CSS Transition</a>
+</body>
+</html>

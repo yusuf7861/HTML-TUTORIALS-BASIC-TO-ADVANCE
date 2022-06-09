@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Ubuntu&display=swap");
+
+      * {
+        font-family: Ubuntu, sans-serif;
+      }
+
+      .box {
+          text-align: center;
+          background-color: #adf0d1;
+          color: white;
+          font-size: 50px;
+          display: none;
+     }
+
+     @media only screen and (max-width: 500px) {
+       #box-1{
+         display: block;
+         background-color: blueviolet;
+       }
+     }
+
+     @media only screen and (max-width: 500px) and (min-width: 300px) {
+       #box-2{
+         display: block;
+         background-color: rgb(224, 132, 12);
+       }
+     }
+
+     @media only screen and (min-width: 500px) and (max-width: 800px) {
+       #box-3{
+         display: block;
+         background-color: rgb(224, 132, 12);
+         color: black;
+       }
+     }
+
+     @media only screen and (min-width: 800px) {
+       #box-4{
+         display: block;
+         background-color: rgb(224, 132, 12);
+       }
+     }
+
+     
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+      <!-- This is the explanation of this tutorial in the details tag. -->
+    <!-- <details>
+      <ul>
+        <b>What Is Media Query?</b>
+        <li>Media queries are used when we want to customize our website's presentation according to the user's screen size. With the help of media queries, you can display different markups based upon the device's general type(mobile, desktop, tablet).</li> <br>
+        <li>A media query is a logical operation. Whenever a media query becomes true, then the related CSS is applied to the target element.</li>
+      </ul>
+    </details> -->
+
+    <div class="box" id="box-1">Mai Ek Phone hu  </div>
+    <div class="box" id="box-2">Mai ek Tablet hu</div>
+    <div class="box" id="box-3">Mai ek Laptop hu </div>
+    <div class="box" id="box-4">Mai ek Android hu</div>
+
+
+    <script>
+        
+    </script>
+
+    <hr>
+    <a href="Tutorial31.html" target="_blank">More on Selectors</a>
+  </body>
+</html>

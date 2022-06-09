@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables and custom properties</title>
+    <style>
+        
+        /* these variables can be used only in its scope only */
+        .box {
+            --box-color1: green;
+            --box-color3: yellow;
+            --box-color2: black;
+            width: 100px;
+            height: 100px;
+            background-color: var(--box-color1);
+            border: 2px solid var(--box-color3);
+            box-shadow: 13px 10px 10px var(--box-color2);
+            margin: 2px 9px;
+            display: inline-block; 
+        }
+
+
+        /* Global variables in terms of programming language. Any custom properties written in the root variable can be used accessed anywhere in the code. */
+        :root {
+            --primary-color: blue;
+            --danger-color: red;
+            --maxw: 1000px
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-color);
+            border: 2px solid var(--danger-color);
+            box-shadow: 3px 3px var(--box-color2);
+            margin: 2px 9px;
+        }
+
+        .container {
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-color);
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+    <hr>
+    <a href="Tutorial36.html" target="_blank">Creating Animation and Keyframes</a>
+
+</body>
+</html>

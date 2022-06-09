@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after Pseudo-Selectors</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Ubuntu&display=swap");
+
+        * {
+            font-family: Ubuntu, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: white;
+            
+            /* background-position: centre; */
+            
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3px 20px;
+            /* border: 2px solid red; */
+            height: 344px;
+            justify-content: center;
+        }
+
+        /* section:before {
+            content: "this is a content";
+        } */
+
+        /* section::after {
+            content: "this is a content";
+        } */
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        header::before {
+            background: url('https://source.unsplash.com/user/wsanter');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact</li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <h1> Welcome to Coding World </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nemo? Vel natus asperiores cumque, quis
+            voluptatum temporibus a et ab rem consequuntur officia! Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Error modi sed dolorum doloribus minima laboriosam</p>
+    </section>
+
+    <hr>
+    <a href="Tutorial34.html" target="_blank">Box and Text-Shadows</a>
+</body>
+</html>

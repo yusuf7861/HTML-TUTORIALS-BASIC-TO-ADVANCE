@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text-Shadow</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Ubuntu&display=swap");
+
+        * {
+            font-family: Ubuntu, sans-serif;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px ;
+            margin: 23px 12px ;
+            border: 2px solid red;
+            background-color: violet;
+
+            /* box-shadow: x-offset y-offset blur-radius spread-radius #color;  !important */
+            /* box-shadow: 8px 10px black;
+            box-shadow: -8px -10px black;
+            box-shadow: -8px 10px black;
+            box-shadow: 8px 10px 20px 5px black; */
+
+            /* for internal box-shadow */
+            box-shadow: inset 3px 15px yellow;
+
+            /* for multiple box-shadow */
+            box-shadow: 3px 5px green, 8px 10px red, 12px 15px yellow;
+            
+        }
+
+        /*  Text Shadow */
+        .card h2 {
+            /* text-shadow: 3px 3px white; */
+            text-shadow: 3px 3px 2px white;
+            text-shadow: -3px -3px 2px white;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card" id="card-1">
+           <h2> This is not C++ Course </h2> 
+           <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta animi iste architecto ipsum repellat in nobis error omnis nostrum. Distinctio ea iusto consequuntur labore eum sapiente aspernatur eos nesciunt aperiam!
+           </p>
+           </div>
+        <div class="card" id="card-2">
+           <h2> This is a HTML Course </h2> 
+           <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta animi iste architecto ipsum repellat in nobis error omnis nostrum. Distinctio ea iusto consequuntur labore eum sapiente aspernatur eos nesciunt aperiam!
+           </p>
+        </div>
+        <div class="card" id="card-3">
+           <h2> This is also CSS Course </h2> 
+           <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta animi iste architecto ipsum repellat in nobis error omnis nostrum. Distinctio ea iusto consequuntur labore eum sapiente aspernatur eos nesciunt aperiam!
+           </p>
+        </div>
+    </div>
+
+    <hr>
+    <a href="Tutorial35.html" target="_blank">CSS Variables and Custom properties</a>
+
+</body>
+</html>
